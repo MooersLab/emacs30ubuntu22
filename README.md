@@ -39,6 +39,9 @@ cd build
 make -j 4
 sudo make -j 4 install
 ```
+
+## Check for support for tree-sitter
+
 Now enter "emacs30" to fire up the GUI and enter "C-h v"  and then enter the variable "system-configuration-features".
 You should have the following returned. Note TREE_SITTER before X11:
 
@@ -46,6 +49,7 @@ You should have the following returned. Note TREE_SITTER before X11:
 "CAIRO DBUS FREETYPE GIF GLIB GMP GNUTLS GSETTINGS HARFBUZZ JPEG LIBSELINUX LIBXML2 MODULES NOTIFY INOTIFY PDUMPER PNG SECCOMP SOUND SQLITE3 THREADS TIFF TOOLKIT_SCROLL_BARS TREE_SITTER X11 XAW3D XDBE XIM XINPUT2 XPM LUCID ZLIB"
 ```
 
+## Install texlive
 I then installed texlive to support the use of latex and org-mode in Emacs.
 
 ```bash
@@ -53,4 +57,6 @@ sudo apt install texlive-latex-base texlive-latex-recommended texlive-latex-reco
 sudo apt install texlive-fonts-recommended texlive-fonts-recommended-doc texlive-luatex texlive-xetex
 ```
 
-Notes: I tried to compile with "--with-imagemagick" but the required libraries were not found.
+## Notes
+
+- I tried to compile with "--with-imagemagick" but the required libraries were not found.
