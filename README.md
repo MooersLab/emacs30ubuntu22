@@ -1,7 +1,3 @@
-# emacs30ubuntu22
-Protocol to install emacs30 on ubuntu 22.04 LTS with tree-sitter support.
-
-
 # Installing Emacs 30.0.5 on Ubuntu 22.04 LTS
 
 By building Emacs29 and greater with tree-sitter, you can use the package combobulate  to use the concrete syntax tree to perform vastly more efficient edits of code.
