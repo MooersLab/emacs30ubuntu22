@@ -24,7 +24,8 @@ sudo apt-get -y install libtree-sitter-dev
 sudo apt install git
 sudo apt install sqlite3
 sudo apt install libgtk-3-dev libwebkit2gtk-4.0-dev
-sudo apt install libc6-dev libjpeg62-dev libncurses5-dev libpng-dev xaw3dg-dev zlib1g-dev libice-dev libsm-dev libx11-dev libxext-dev   sudo apt install  libxi-dev libxmu-dev libxmuu-dev libxpm-dev libxrandr-dev libxt-dev libxtst-dev libxv-dev
+sudo apt install libc6-dev libjpeg62-dev libpng-dev xaw3dg-dev zlib1g-dev libice-dev libsm-dev libx11-dev libxext-dev
+sudo apt install libxi-dev libxmu-dev libxmuu-dev libxrandr-dev libxt-dev libxtst-dev libxv-dev
 sudo apt install libattr1-dev
 sudo apt install autoconf
 mkdir software
@@ -42,7 +43,7 @@ sudo make -j 4 install
 
 ## Check for support for tree-sitter
 
-Now enter "emacs30" to fire up the GUI and enter "C-h v"  and then enter the variable "system-configuration-features".
+Now enter `emacs30` to fire up the GUI and enter `C-h v`  and then enter the variable `system-configuration-features`.
 You should have the following returned. Note TREE_SITTER before X11:
 
 ```bash
@@ -55,6 +56,26 @@ I then installed texlive to support the use of latex and org-mode in Emacs.
 ```bash
 sudo apt install texlive-latex-base texlive-latex-recommended texlive-latex-recommended-doc texlive-science texlive-science-doc 
 sudo apt install texlive-fonts-recommended texlive-fonts-recommended-doc texlive-luatex texlive-xetex
+```
+
+## Make alias to emacs30
+
+Now to make a profile for emacs30 by storing it in the directory "~/latex-emacs30".
+I am taking advantage of the `--init-directory` flag available since version 29.
+
+```bash
+cd
+mkdir latex-emacs30
+touch .bashAliases
+emacs30 .bashAliases # add the following line
+alias e30ld='/usr/local/bin/emacs30 --init-directory ~/latex-emacs30 --debug-init' 
+C-x C-s
+C-x C-c
+emacs .bashrc # add the following line
+source ~/.bashAliases
+C-x C-s
+C-x C-c
+source .bashrc
 ```
 
 ## Notes
