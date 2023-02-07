@@ -9,8 +9,9 @@ Note as of early February 2023, emacs-plus@29 in home brew does not ship with su
 I was trying to install Emacs 29.0.5, but as of Monday February 6, 2023, the emacs29 branch of the git repo was loaded with Emacs 30.0.5. This error should be fixed soon, but user be aware.
 
 I did this installation in a fresh virtual machine using VirtualBox VM.
-I tried to install from the iso file on an external harddrive but I my account failed to be in the sudouser list.
-To fix this problem, I installed again with the iso file on a USB flash drive.
+I tried to install from the iso file on an external harddrive, but I my account failed to land in the sudouser list.
+I was unable to use `sudo` to install software.
+To fix this problem, I repeated the virtual machine creation with the iso file on a USB flash drive.
 
 I followed the instruction [here](https://www.techrepublic.com/article/how-to-enable-copy-and-paste-in-virtualbox/) to enable the copying and pasting of commands between the host and guest operating systems.
 
