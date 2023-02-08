@@ -1,4 +1,4 @@
-# Installing Emacs 30.0.5 on Ubuntu 22.04 LTS
+# Compiling Emacs 30.0.5 on Ubuntu 22.04 LTS with tree-sitter support
 
 By building Emacs29 and greater with tree-sitter, you can use the package combobulate  to use the concrete syntax tree to perform vastly more efficient edits of code.
 You are going to need this capability to fix all of that wrong code returned by ChatGPT.
