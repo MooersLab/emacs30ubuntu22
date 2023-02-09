@@ -72,11 +72,12 @@ emacs30 .bashAliases # add the following line
 alias e30ld='/usr/local/bin/emacs30 --init-directory ~/latex-emacs30 --debug-init' 
 C-x C-s
 C-x C-c
-emacs .bashrc # add the following line
+emacs30 .bashrc # add the following line
 source ~/.bashAliases
 C-x C-s
 C-x C-c
-source .bashrc
+source .bashrc # now enter the alias to fire Emacs
+e30ld
 ```
 
 ## Notes
