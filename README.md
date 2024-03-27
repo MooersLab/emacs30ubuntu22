@@ -1,15 +1,19 @@
+![Version](https://img.shields.io/static/v1?label=emacs30ubuntu22&message=0.1&color=brightcolor)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+
 # Compiling Emacs 30.0.5 on Ubuntu 22.04 LTS with tree-sitter support
 
 By building Emacs29 and greater with tree-sitter, you can use the package combobulate  to use the concrete syntax tree to perform vastly more efficient edits of code.
-You are going to need this capability to fix all of that wrong code returned by ChatGPT.
+You will need this capability to fix all of the wrong code returned by ChatGPT.
 
-Tree-sitter is an C-library that has to be installed in advance of compiling Emacs from source code.
-Note as of early February 2023, emacs-plus@29 in home brew does not ship with support for tree-sitter nor does the latest version downloaded from Emacs on Mac OSX.
+Tree-sitter is an C-library that must be installed before compiling Emacs from source code.
+Please note that as of early February 2023, emacs-plus@29 in home brew does not ship with support for tree-sitter, nor does the latest version downloaded from Emacs on Mac OSX.
 
 I was trying to install Emacs 29.0.5, but as of Monday February 6, 2023, the emacs29 branch of the git repo was loaded with Emacs 30.0.5. This error should be fixed soon, but user be aware.
 
 I did this installation in a fresh virtual machine using VirtualBox VM.
-I tried to install from the iso file on an external harddrive, but I my account failed to land in the sudouser list.
+I tried to install from the iso file on an external harddrive, but my account failed to land in the sudouser list.
 I was unable to use `sudo` to install software.
 To fix this problem, I repeated the virtual machine creation with the iso file on a USB flash drive.
 
@@ -52,7 +56,7 @@ You should have the following returned. Note TREE_SITTER before X11:
 ```
 
 ## Install texlive
-I then installed texlive to support the use of latex and org-mode in Emacs.
+I then installed texlive to support using latex and org-mode in Emacs.
 
 ```bash
 sudo apt install texlive-latex-base texlive-latex-recommended texlive-latex-recommended-doc texlive-science texlive-science-doc 
@@ -61,7 +65,7 @@ sudo apt install texlive-fonts-recommended texlive-fonts-recommended-doc texlive
 
 ## Make alias to emacs30
 
-Now to make a profile for emacs30 by storing it in the directory "~/latex-emacs30".
+Now, make a profile for emacs30 by storing it in the directory "~/latex-emacs30".
 I am taking advantage of the `--init-directory` flag available since version 29.
 
 ```bash
