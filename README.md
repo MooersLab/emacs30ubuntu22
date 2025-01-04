@@ -102,3 +102,17 @@ e30ld
 ## Notes
 
 - I tried to compile with "--with-imagemagick" but the required libraries were not found.
+
+|Version       |Changes                                                                                               |Date                  |
+|:-------------|:-----------------------------------------------------------------------------------------------------|:--------------------:|
+| Version 0.2  | Added note about Emacs 29.4 from Alex Murray                      | 2024 January 3    |
+
+
+
+## Sources of funding
+
+- NIH: R01 CA242845
+- NIH: R01 AI088011
+- NIH: P30 CA225520 (PI: R. Mannel)
+- NIH: P20 GM103640 and P30 GM145423 (PI: A. West)
+
